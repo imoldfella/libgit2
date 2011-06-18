@@ -431,9 +431,9 @@ and email should be found in the <code>user.name</code> and <code>user.email</co
 section of this example file to see how to access config values.</p>
       </td>
       <td class=code>
-        <div class='highlight'><pre>  <span class="n">author</span> <span class="o">=</span> <span class="n"><a name="git_signature_new-7" href="../../#HEAD/group/signature/git_signature_new">git_signature_new</a></span><span class="p">(</span><span class="s">&quot;Scott Chacon&quot;</span><span class="p">,</span> <span class="s">&quot;schacon@gmail.com&quot;</span><span class="p">,</span>
+        <div class='highlight'><pre>  <span class="n">author</span> <span class="o">=</span> <span class="n"><a name="git_signature_new-6" href="../../#HEAD/group/signature/git_signature_new">git_signature_new</a></span><span class="p">(</span><span class="s">&quot;Scott Chacon&quot;</span><span class="p">,</span> <span class="s">&quot;schacon@gmail.com&quot;</span><span class="p">,</span>
       <span class="mi">123456789</span><span class="p">,</span> <span class="mi">60</span><span class="p">);</span>
-  <span class="n">cmtter</span> <span class="o">=</span> <span class="n"><a name="git_signature_new-8" href="../../#HEAD/group/signature/git_signature_new">git_signature_new</a></span><span class="p">(</span><span class="s">&quot;Scott A Chacon&quot;</span><span class="p">,</span> <span class="s">&quot;scott@github.com&quot;</span><span class="p">,</span>
+  <span class="n">cmtter</span> <span class="o">=</span> <span class="n"><a name="git_signature_new-7" href="../../#HEAD/group/signature/git_signature_new">git_signature_new</a></span><span class="p">(</span><span class="s">&quot;Scott A Chacon&quot;</span><span class="p">,</span> <span class="s">&quot;scott@github.com&quot;</span><span class="p">,</span>
       <span class="mi">987654321</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span></pre></div>
       </td>
     </tr>
@@ -524,7 +524,7 @@ the tagger (a git_signature &ndash; name, email, timestamp), and the tag message
       </td>
       <td class=code>
         <div class='highlight'><pre>  <span class="n"><a name="git_tag_target-24" href="../../#HEAD/group/tag/git_tag_target">git_tag_target</a></span><span class="p">((</span><span class="n">git_object</span> <span class="o">**</span><span class="p">)</span><span class="o">&amp;</span><span class="n">commit</span><span class="p">,</span> <span class="n">tag</span><span class="p">);</span>
-  <span class="n">tname</span> <span class="o">=</span> <span class="n"><a name="git_tag_name-10" href="../../#HEAD/group/tag/git_tag_name">git_tag_name</a></span><span class="p">(</span><span class="n">tag</span><span class="p">);</span>    <span class="c1">// &quot;test&quot;</span>
+  <span class="n">tname</span> <span class="o">=</span> <span class="n"><a name="git_tag_name-9" href="../../#HEAD/group/tag/git_tag_name">git_tag_name</a></span><span class="p">(</span><span class="n">tag</span><span class="p">);</span>    <span class="c1">// &quot;test&quot;</span>
   <span class="n">ttype</span> <span class="o">=</span> <span class="n"><a name="git_tag_type-51" href="../../#HEAD/group/tag/git_tag_type">git_tag_type</a></span><span class="p">(</span><span class="n">tag</span><span class="p">);</span>    <span class="c1">// GIT_OBJ_COMMIT (otype enum)</span>
   <span class="n">tmessage</span> <span class="o">=</span> <span class="n"><a name="git_tag_message-34" href="../../#HEAD/group/tag/git_tag_message">git_tag_message</a></span><span class="p">(</span><span class="n">tag</span><span class="p">);</span> <span class="c1">// &quot;tag message\n&quot;</span>
   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Tag Message: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">tmessage</span><span class="p">);</span>
@@ -683,7 +683,7 @@ want to emulate <code>git log branch1..branch2</code>, you would push the oid of
 of <code>branch1</code>.</p>
       </td>
       <td class=code>
-        <div class='highlight'><pre>  <span class="n"><a name="git_revwalk_new-9" href="../../#HEAD/group/revwalk/git_revwalk_new">git_revwalk_new</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">walk</span><span class="p">,</span> <span class="n">repo</span><span class="p">);</span>
+        <div class='highlight'><pre>  <span class="n"><a name="git_revwalk_new-8" href="../../#HEAD/group/revwalk/git_revwalk_new">git_revwalk_new</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">walk</span><span class="p">,</span> <span class="n">repo</span><span class="p">);</span>
   <span class="n"><a name="git_revwalk_sorting-35" href="../../#HEAD/group/revwalk/git_revwalk_sorting">git_revwalk_sorting</a></span><span class="p">(</span><span class="n">walk</span><span class="p">,</span> <span class="n">GIT_SORT_TOPOLOGICAL</span> <span class="o">|</span> <span class="n">GIT_SORT_REVERSE</span><span class="p">);</span>
   <span class="n"><a name="git_revwalk_push-28" href="../../#HEAD/group/revwalk/git_revwalk_push">git_revwalk_push</a></span><span class="p">(</span><span class="n">walk</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">oid</span><span class="p">);</span>
 
@@ -752,7 +752,7 @@ here, or you can open and manipulate any index file with <code>git_index_open_ba
 for the repository will be located and loaded from disk.</p>
       </td>
       <td class=code>
-        <div class='highlight'><pre>  <span class="n"><a name="git_repository_index-11" href="../../#HEAD/group/repository/git_repository_index">git_repository_index</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">index</span><span class="p">,</span> <span class="n">repo</span><span class="p">);</span></pre></div>
+        <div class='highlight'><pre>  <span class="n"><a name="git_repository_index-10" href="../../#HEAD/group/repository/git_repository_index">git_repository_index</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">index</span><span class="p">,</span> <span class="n">repo</span><span class="p">);</span></pre></div>
       </td>
     </tr>
     <tr id='section-49'>
@@ -863,7 +863,7 @@ any of the accessible config file locations (system, global, local).</p>
         <p>Open a config object so we can read global values from it.</p>
       </td>
       <td class=code>
-        <div class='highlight'><pre>  <span class="n"><a name="git_config_open_global-6" href="../../#HEAD/group/config/git_config_open_global">git_config_open_global</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">);</span>
+        <div class='highlight'><pre>  <span class="n"><a name="git_config_open_ondisk-11" href="../../#HEAD/group/config/git_config_open_ondisk">git_config_open_ondisk</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">,</span> <span class="s">&quot;~/.gitconfig&quot;</span><span class="p">);</span>
 
   <span class="n"><a name="git_config_get_int-29" href="../../#HEAD/group/config/git_config_get_int">git_config_get_int</a></span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="s">&quot;help.autocorrect&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">j</span><span class="p">);</span>
   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Autocorrect: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
