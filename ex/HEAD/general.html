@@ -463,7 +463,7 @@ objects to create the commit with, but you can also use</p>
 the commit.  The SHA key is written to the <code>commit_id</code> variable here.</p>
       </td>
       <td class=code>
-        <div class='highlight'><pre>  <span class="n"><a name="git_commit_create_v-32" href="../../#HEAD/group/commit/git_commit_create_v">git_commit_create_v</a></span><span class="p">(</span>
+        <div class='highlight'><pre>  <span class="n"><a name="git_commit_create_v-33" href="../../#HEAD/group/commit/git_commit_create_v">git_commit_create_v</a></span><span class="p">(</span>
     <span class="o">&amp;</span><span class="n">commit_id</span><span class="p">,</span> <span class="cm">/* out id */</span>
     <span class="n">repo</span><span class="p">,</span>
     <span class="nb">NULL</span><span class="p">,</span> <span class="cm">/* do not update the HEAD */</span>
@@ -822,7 +822,7 @@ resolve them to the SHA, then print both values out.</p>
       <td class=code>
         <div class='highlight'><pre>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">ref_list</span><span class="p">.</span><span class="n">count</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">refname</span> <span class="o">=</span> <span class="n">ref_list</span><span class="p">.</span><span class="n">strings</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n"><a name="git_reference_lookup-33" href="../../#HEAD/group/reference/git_reference_lookup">git_reference_lookup</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">ref</span><span class="p">,</span> <span class="n">repo</span><span class="p">,</span> <span class="n">refname</span><span class="p">);</span>
+    <span class="n"><a name="git_reference_lookup-32" href="../../#HEAD/group/reference/git_reference_lookup">git_reference_lookup</a></span><span class="p">(</span><span class="o">&amp;</span><span class="n">ref</span><span class="p">,</span> <span class="n">repo</span><span class="p">,</span> <span class="n">refname</span><span class="p">);</span>
 
     <span class="k">switch</span> <span class="p">(</span><span class="n"><a name="git_reference_type-14" href="../../#HEAD/group/reference/git_reference_type">git_reference_type</a></span><span class="p">(</span><span class="n">ref</span><span class="p">))</span> <span class="p">{</span>
     <span class="k">case</span> <span class="n">GIT_REF_OID</span>:
