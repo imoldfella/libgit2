@@ -111,3 +111,5 @@ other.  However, you cannot modify libgit2 and distribute it without
 supplying the source.
 
 See the COPYING file for the full license text.
+
+
